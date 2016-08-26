@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#67E0EC"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btn_open_bluetooth"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listView"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/button"
+        android:text="打开蓝牙" />
+
+    <Button
+        android:id="@+id/btn_close_bluetooth"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_open_bluetooth"
+        android:layout_alignBottom="@+id/btn_open_bluetooth"
+        android:layout_alignRight="@+id/listView"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/button"
+        android:text="关闭蓝牙" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/btn_close"
+        android:layout_centerHorizontal="true" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_discovery"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_open_bluetooth"
+        android:layout_below="@+id/btn_open_bluetooth"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/button"
+        android:text="扫描蓝牙" />
+
+    <Button
+        android:id="@+id/btn_stop_discovery"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_discovery"
+        android:layout_alignBottom="@+id/btn_discovery"
+        android:layout_alignLeft="@+id/btn_close_bluetooth"
+        android:background="@drawable/button"
+        android:text="停止扫描" />
+
+    <Button
+        android:id="@+id/btn_open"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/btn_discovery"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button2"
+        android:text="一键寻物" />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="30dp"
+        android:layout_height="80dp"
+        android:layout_alignRight="@+id/btn_stop_discovery"
+        android:layout_alignTop="@+id/btn_open"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/button"
+        android:text="已找到" />
+
+</RelativeLayout>
